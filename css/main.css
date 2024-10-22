@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+  body,
+  html {
+    height: 100%;
+    font-family: "DM Mono", monospace;
+    background-color: rgb(123, 146, 166);
+  }
+  .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-group{
+    background: #fff;
+    display: flex;    
+    align-items: center;
+    gap:10px;
+    border:1px solid #ebebeb;
+    height: 30px;
+    border-radius:15px;
+    padding: 0 20px;    
+  }
+  .input-group input{
+    border: none;
+    outline: none;
+    display: block;
+  }
+  .input-group:focus-within{
+    border: 1px solid rgb(148, 148, 148);
+  }
