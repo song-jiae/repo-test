@@ -1,0 +1,107 @@
+@import url('https://webfontworld.github.io/Poppins/Poppins.css');
+body{
+  height: 100vh;
+}
+/* reset */
+*{margin: 0; padding: 0; font-family: 'Poppins';}
+a{text-decoration: none; color: #333;}
+/* header영역 */
+header{
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgb(131, 131, 131);
+  z-index: 3;
+}
+.header_inner{
+  width: 1200px;
+  margin: auto;
+  /* overflow: hidden; */
+  height: 80px;
+  line-height: 80px;
+}
+.header_inner h1{float: left;
+font-size: 25px;
+}
+.header_inner nav{float: right;}
+.header_inner nav a{
+  color: #333;
+  font-size: 15px;
+  display: inline-block;
+  padding: 0 10px;
+}
+.header_inner nav a:hover{color: #272727; font-weight: 500;}
+/* main */
+.main_inner{
+  width: 1200px;
+  height: 500px;
+  background: url(image/architect.jpg);
+  background-position: center bottom;
+  margin: auto;
+  position: relative;
+  z-index: -2;
+}
+.main_inner h2.title{
+  position:absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.main_inner h2.title span{
+  background-color: #27272770;
+  padding: 0 10px;
+  margin-right: 20px;
+}
+/* section */
+section{}
+.img_wrap{
+  width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.img_wrap .card{
+  width: 280px; height: 180px;  box-sizing: border-box; 
+  float: left; margin-right: 25px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.img_wrap .card:nth-child(1){
+  background: url(image/house1.jpg);
+  background-size: cover;
+}
+.img_wrap .card:nth-child(2){
+  background: url(image/house2.jpg);
+  background-size: cover;
+}
+.img_wrap .card:nth-child(3){
+  background: url(image/house3.jpg);
+  background-size: cover;
+}
+.img_wrap .card:nth-child(4){
+  background: url(image/house4.jpg);
+  margin-right: 0;
+  float: right;
+  background-size: cover;
+}
+.img_wrap .card p{
+  color:#fff;
+  background-color: #000;
+  padding: 3px 15px;
+  display: inline-block;
+  font-size: 12px;
+  position: absolute;
+  top: 0; right: 0;
+  border-radius: 0 0 0 10px;
+  
+}
+footer{
+  text-align: center;
+  background-color: #333;
+  color: #c5c5c5;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  position: absolute;
+  bottom: 0;
+}

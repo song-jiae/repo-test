@@ -1,0 +1,71 @@
+/* tium  */
+@import url('https://webfontworld.github.io/tmon/Tium.css');
+/* 나눔스퀘어 네오 */
+@import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+*{margin: 0; padding: 0;
+  font-family: 'Tium', 'NanumSquareNeo';
+}
+a{text-decoration: none; color: #333;}
+.wrap{
+  width: 1000px;
+  margin: auto;
+}
+section{ width: 1000px; overflow: hidden; height: 500px;}
+section nav{
+  background-color: lightslategray;
+  float: left;
+  width:28%;
+  height: inherit;
+  
+}
+section main{
+  height: inherit;
+  width: 70%;
+  float: right;
+}
+header, footer{text-align: center; height: 70px; 
+line-height: 70px; background: lightgray;}
+header{
+  background-color: lightgoldenrodyellow;
+}
+
+/* header영역 */
+header{}
+header h2{}
+header h2 a{
+  transition: 0.3s;
+}
+header h2 a:hover{
+  text-shadow: 0 0 5px rgba(204, 111, 254, 0.607);
+}
+
+/* section */
+nav{
+
+}
+nav ul{
+  width: 50%;
+  margin: auto;
+  list-style: none;
+  margin-top: 40px;
+}
+nav ul li{
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+nav ul li a{
+  display: block;
+  color: #fff;
+  transition: 0.3s;
+}
+nav ul li a:hover{
+  color: lightsalmon
+}
+main h3{margin: 10px;}
+.article{}
+.article>img{width: 300px;
+  float: left;
+  margin: 10px;
+}
+.article p{font-family: 'NanumSquareNeo'; margin: 10px;}

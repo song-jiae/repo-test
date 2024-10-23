@@ -1,0 +1,138 @@
+/* 
+**1. 영문, 한글폰트 사용 
+** 2. 로고에 마우스 올리면 글자색 변경
+** 3. inner영역은 1300px
+** 4. 폰트어썸 또는 xeicon
+5. 박스그림자, 선적용
+6. pagenation부분은 a태그
+** 7. 문자부분은 한줄로 적용
+**  끝에 있는 부분을 말줄임 해주세요
+ */
+
+ /* fonts CDN SUIT,Montserrat */
+@import url('https://webfontworld.github.io/sunn/SUIT.css');
+@import url('https://webfontworld.github.io/Montserrat/Montserrat.css');
+/* reset */
+*{font-family: 'SUIT','Montserrat', sans-serif; margin: 0; padding: 0; color: #252525;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: #252525;}
+/* common */
+.inner{width: 1300px; margin: auto;}
+/* 버튼영역 */
+a.more{
+  display: inline-block;
+  background-color: #1e73c9;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  margin-top: 10px;
+}
+/* header */
+.header_inner{ height: 80px; line-height: 80px;}
+.header_inner a{
+  font-weight: 900;
+  color: #1e73c9;
+  font-family:'Montserrat';
+  font-size: 40px;
+  transition: 0.3s; /* 
+  transition 값은 hover전에 적용해야됨 초 단위를 써야됨 */
+}
+.header_inner a:hover{color: rgb(7, 15, 71);}
+/* nav */
+nav{background-color: #1e73c9; margin-bottom: 30px;}
+.nav_inner ul.menu{
+  height: 50px;
+  line-height: 50px;
+}
+.nav_inner ul.menu li{float: left;}
+.nav_inner ul.menu li a{
+  display: inline-block; width: 55px;
+  text-align: center;
+  transition: 0.2s;
+  font-size: 15px; 
+}
+.nav_inner ul.menu li a:hover{
+  background-color: #b22515;
+  color: #fff;
+  font-weight: 600;
+}
+/* 메인토마토 */
+.section01_inner{
+  /* badge영역의 부모에 relative*/
+  position: relative;
+  border: 1px solid #eee;
+}
+.section01_inner .img_box{
+  width: 100%; font-size: 0; /* 이미지에 공백없애기 */
+}
+.section01_inner .img_box img,
+.section02_inner .box_wrap .img_box img,
+.section03_inner .box_wrap .img_box img{ width: 100%;}
+
+.section01_inner .text_box,
+.section02_inner .box_wrap .text_box,
+.section03_inner .box_wrap .text_box{margin: 15px;}
+
+.section01_inner .text_box p,
+.section02_inner .box_wrap .text_box p,
+.section03_inner .box_wrap .text_box p{margin: 5px 0;
+  width:70%;
+  white-space: nowrap; /* 줄바꿈 안하기 */
+  overflow: hidden; /* width에서 넘치는 부분 숨기기 */
+  text-overflow: ellipsis; 
+  /* 넘치는 글자가 있으면 ...으로 표시 */
+}
+.section01_inner .text_box a i,
+.section02_inner .box_wrap .text_box a i,
+.section03_inner .box_wrap .text_box a i{
+  color: #fff; margin-left: 3px;}
+.section01_inner .badge{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: rgb(13, 1, 110);
+  cursor: pointer;
+  right: -25px;
+  bottom: 110px;
+  text-align: center;
+  border-radius: 100%;
+}
+.section01_inner .badge i{
+  font-size: 50px;
+  color: #fff;
+  margin-top: 45px;
+}
+.section01_inner .badge p{
+  color: #fff;
+  font-size: 25px;
+}
+/* section02, section03*/
+.section02_inner, .section03_inner{ overflow: hidden; margin: 30px auto;}
+.box_wrap{border: 1px solid #dddddd;}
+
+.section02_inner .box_wrap:nth-child(1),
+.section03_inner .box_wrap:nth-child(1){
+  width: 49%;
+  float: left;
+}
+
+.section02_inner .box_wrap:nth-child(2),
+.section03_inner .box_wrap:nth-child(2){
+  width: 49%;
+  float: right;
+}
+.text_box{margin-left: 15px;}
+
+/* pagenation */
+.pagenation{
+  text-align: center;
+  margin: 30px auto;
+}
+/* footer */
+.footer{
+  height: 80px;
+  line-height: 80px;
+  border-top: 1px solid #eee;
+}
